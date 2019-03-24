@@ -104,15 +104,28 @@ $(document).ready(function () {
                     // display images
                     for (var i = 0; i < data.length; i++) {
 
-                         var stillGIF = data[i].images.original_still.url;
-                         var animatedGIF = data[i].images.original.url;
+                         var stillGif = data[i].images.original_still.url;
+                         var animatedGif = data[i].images.original.url;
                          var alt = data[i].title;
 
-                         var image = `<img class="gif" data-state="still" src="${stillGIF}" data-animate="${animatedGIF}" data-still="${stillGIF}" alt="${alt}">`;
+                         var $img = $('<img>');
+                         $img.addClass('gif');
+                         $img.attr("src", stillGif);
+                         $img.attr("data-state", "still");
+                         $img.attr("data-animate", animatedGif);
+                         $img.attr("data-still", stillGif);
+                         $img.attr("alt", alt);
+                         var image = `<img class="gif" data-state="still" src="${stillGif}" data-animate="${animatedGif}" data-still="${stillGif}" alt="${alt}">\nRating: ${data[i].rating}`;
 
+                         //var $p = $('<p>');
+                         //$p.text(`Rating: ${data[i].rating}`);
+                         //var $div = $("<div>");
+                         //$div.append($img);
+                         //$div.append($p);
                          $('#topic-view').prepend(image);
                     }
                }); // AJAX call
+
           } catch (e) {
 
                console.log('Something went wrong with AJAX call.');
