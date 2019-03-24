@@ -4,8 +4,6 @@ $(document).ready(function () {
 
      // ----- VARIABLES -----//
      var topics = [
-          'Tom And Jerry',
-          'Lady And The Tramp',
           'Daffy Duck',
           'Donald Duck',
           'Betty Boop'
@@ -98,10 +96,10 @@ $(document).ready(function () {
                     method: 'GET'
                }).then(function (response) {
 
-                    var data = response.data;
-
-                    // delete old gifs
+                    // clear old gifs so only new ones are displayed
                     // $('#topic-view').empty();
+
+                    var data = response.data;
 
                     // display images
                     for (var i = 0; i < data.length; i++) {
@@ -110,14 +108,14 @@ $(document).ready(function () {
                          var animatedGIF = data[i].images.original.url;
                          var alt = data[i].title;
 
-                         var image = `<img class="gif" data-state="still" src="${stillGIF}" data-animate="${animatedGIF}" data-still="${stillGIF} alt="${alt}">`;
+                         var image = `<img class="gif" data-state="still" src="${stillGIF}" data-animate="${animatedGIF}" data-still="${stillGIF}" alt="${alt}">`;
 
                          $('#topic-view').prepend(image);
                     }
-               });
+               }); // AJAX call
           } catch (e) {
 
                console.log('Something went wrong with AJAX call.');
           }
-     }
-}); // displayImages()
+     } // displayImages()
+}); // document.ready()
