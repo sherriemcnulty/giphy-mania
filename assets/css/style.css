@@ -37,6 +37,14 @@ footer {
     font-weight: bold;
 }
 
+.gif {
+    margin: 1%;
+    width: 20%;
+    height: auto;
+    vertical-align: middle;
+    border: 3px inset lightgray;
+}
+
 .m-auto {
     margin: auto;
 }
