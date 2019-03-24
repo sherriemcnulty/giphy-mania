@@ -1,0 +1,91 @@
+/* ----- element styles ----- */
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    margin: 1%;
+    padding: 5px;
+    min-width: 100px;
+    color: white;
+    font-size: inherit;
+    background-color: #339;
+    border: 2px outset lightgray;
+}
+
+form {
+    margin: 2%;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    line-height: 1.3em;
+    font-size: small;
+}
+
+/* ----- class styles ----- */
+.bold {
+    font-weight: bold;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.std-width {
+    width: 75%;
+}
+
+/* ----- id styles ----- */
+#container {
+    font-size: 1.0em;
+    font-family: 'Arial',
+        'Helvetica Neue',
+        Helvetica,
+        sans-serif;
+    text-align: center;
+}
+
+#content {
+    width: 75%;
+    padding: 2%;
+    margin: auto;
+    text-align: left;
+    background-color: aliceblue;
+    border: navy solid 1px;
+}
+
+#search-input {
+    margin-right: 0px;
+}
+
+/* ----- media queries ----- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font: 10pt;
+    }
+
+    .gif {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        word-break: keep-all;
+        font-size: 8pt;
+    }
+
+    .gif {
+        width: 100%;
+    }
+}

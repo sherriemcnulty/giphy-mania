@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+     <title>Jiffy-Giphy</title>
+     <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon" />
+
+     <!-- normalize before applying styles for consistency across platforms -->
+     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+
+     <!-- Giphy-Mania styles -->
+     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+     <div id="container">
+
+          <header><img class="std-width m-auto" src="assets/images/header.png" alt="jiffy giphy"></header>
+
+          <div id="content" class="std-width m-auto">
+               <p>
+                    Click any movie button to see pictures from that movie. Click the pictures to toggle
+                    between still and animated views. You can also add your own buttons by typing what you
+                    want to see in the search box. Then press "Submit." Enjoy!
+               </p>
+
+               <form id="search-form">
+                    <label id="search-label" class="bold" for="search-input">Search:&nbsp;</label>
+                    <input id="search-input" type="text">
+                    <button id="search-btn" class="bold">Submit</button>
+               </form>
+
+               <!-- New buttons will get placed here-->
+               <div id="movie-buttons"></div>
+
+               <!-- Gifs images will get placed here -->
+               <div id="movie-view"></div>
+
+          </div> <!-- content -->
+     </div> <!-- container -->
+
+     <footer class="bold">Animation compliments of <a href="https://giphy.com/">Giphy.com</a></footer>
+
+     <!-- jQuery library -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <!-- Giphy-Mania javascript -->
+     <script src="assets/javascript/app.js" type="text/javascript"></script>
+
+</body>
+
+</html>
