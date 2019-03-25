@@ -101,7 +101,10 @@ $(document).ready(function () {
 
                     var data = response.data;
 
-                    // display images
+                    // we need to declare $row outside the loop
+                    // to avoid creating a new one for each image
+                    var $row;
+
                     for (var i = 0; i < data.length; i++) {
 
                          // grab urls and ratings
@@ -122,20 +125,16 @@ $(document).ready(function () {
                          $col.attr("id", `col${i}`);
 
                          // append image and rating
-                         if (!(i % 5) && (i != 0)) {
-                              // append column to a new row
-                              var $row = $("<div>");
+                         if (!(i % 4)) {
+                              $row = $("<div>");
                               $row.addClass("row");
-                              $row.attr("id", `row${i}`);
-                              $row.append($col);
-                              $col.append($img);
-                              $col.append($p);
-                              $("#topic-view").prepend($row);
-                         } else {
-                              $col.append($img);
-                              $col.append($p);
-                              $("#topic-view").prepend($col);
-                         } // if-else
+                              $row.addClass("my-3")
+                         }
+                         $row.append($col);
+                         $col.append($img);
+                         $col.append($p);
+                         $("#topic-view").prepend($row);
+
                     } // for
                }); // AJAX call
 
