@@ -1,76 +1,25 @@
 /* ----- element styles ----- */
 html,
 body {
-    margin: 0px;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: palegoldenrod;
+    background-color: aliceblue;
 }
 
 button {
-    margin: 1%;
-    padding: 5px;
-    min-width: 100px;
     color: white;
-    font-size: inherit;
-    background-color: #339;
-    border: 2px outset lightgray;
-}
-
-form {
-    margin: auto;
-    padding: 2%;
-    font-weight: bold;
-}
-
-p {
-    margin: auto;
-    width: 75%;
-    text-align: left;
+    background-color: #01569c;
+    border: 2px outset gray;
 }
 
 /* ----- class styles ----- */
 .gif {
-    margin: auto;
-    max-width: 90%;
-    height: auto;
-    overflow: hidden;
-    border: 3px outset lightgray;
+    width: 90%;
+    border: 2px outset gray;
 }
-
 
 /* ----- id styles ----- */
 #container {
-    width: 75%;
-    margin: auto;
-    margin-top: 0;
-    font-size: 1.0em;
     font-family: 'Arial',
         'Helvetica Neue',
         Helvetica,
         sans-serif;
-    text-align: center;
-}
-
-/* ----- media queries ----- */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    body {
-        font: 10pt;
-    }
-
-    .gif {
-        width: 30%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        word-break: keep-all;
-        font-size: 8pt;
-    }
-
-    .gif {
-        width: 100%;
-    }
 }

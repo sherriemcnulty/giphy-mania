@@ -20,24 +20,22 @@
      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
-
-     <div id="container">
-
-          <header><img class="std-width m-auto" src="assets/images/header.png" alt="jiffy giphy"></header>
-
+<body class="m-0 p-0 w-100 h-100 overflow-hidden">
+     <div id="container" class="w-75 mt-0 mx-auto text-center">
+          <header><img id="header-img" class="w-75 m-auto" src="assets/images/header.png" alt="jiffy giphy">
+          </header>
           <div class="row">
                <div class="col-md-12">
-                    <p>
+                    <p class="w-75 h-auto mx-auto text-left">
                          Click any topic button to see pictures from that topic. Click the pictures to toggle
                          between still and animated views. You can also add your own buttons by typing what you
                          want to see in the search box. Then press "Submit." Enjoy!
                     </p>
 
-                    <form id="search-form">
+                    <form id="search-form" class="mx-auto p-2 font-weight-bold">
                          <label id="search-label" class="bold" for="search-input">Search:&nbsp;</label>
                          <input id="search-input" type="text">
-                         <button id="submit-btn" class="bold">Submit</button>
+                         <button id="submit-btn">Submit</button>
                     </form>
                </div> <!-- col -->
           </div> <!-- row -->

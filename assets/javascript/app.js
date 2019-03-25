@@ -72,7 +72,7 @@ $(document).ready(function () {
           for (var i = 0; i < topics.length; i++) {
 
                var btn = $('<button>');
-               btn.addClass('topic-btn bold');
+               btn.addClass('topic-btn m-1');
                btn.attr('data-name', topics[i]);
                btn.text(topics[i]);
                $('#topic-buttons').append(btn);
@@ -114,7 +114,7 @@ $(document).ready(function () {
                          var rating = data[i].rating;
 
                          // create elements and append to 
-                         var $img = `<img class="gif" data-state="still" src="${stillGif}" data-animate="${animatedGif}" data-still="${stillGif}" alt="${alt}"><br>`;
+                         var $img = `<img class="gif overflow-hidden" data-state="still" src="${stillGif}" data-animate="${animatedGif}" data-still="${stillGif}" alt="${alt}"><br>`;
 
                          var $p = $("<p>");
                          $p.text(`Rating: ${data[i].rating}`);
