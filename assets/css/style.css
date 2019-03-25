@@ -2,7 +2,7 @@
 html,
 body {
     margin: 0px;
-    padding: 0px;
+    padding: 0;
     width: 100%;
     height: 100%;
     background-color: palegoldenrod;
@@ -19,54 +19,36 @@ button {
 }
 
 form {
-    margin: 2%;
+    margin: auto;
+    padding: 2%;
     font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    line-height: 1.3em;
-    font-size: small;
+p {
+    margin: auto;
+    width: 75%;
+    text-align: left;
 }
 
 /* ----- class styles ----- */
-.bold {
-    font-weight: bold;
-}
-
 .gif {
-    margin: 1%;
-    width: 20%;
+    max-width: 250px;
     height: auto;
-    vertical-align: middle;
-    border: 3px inset lightgray;
+    border: 3px outset lightgray;
 }
 
-.m-auto {
-    margin: auto;
-}
-
-.std-width {
-    width: 75%;
-}
 
 /* ----- id styles ----- */
 #container {
+    width: 75%;
+    margin: auto;
+    margin-top: 0;
     font-size: 1.0em;
     font-family: 'Arial',
         'Helvetica Neue',
         Helvetica,
         sans-serif;
     text-align: center;
-}
-
-#content {
-    width: 75%;
-    padding: 2%;
-    margin: auto;
-    text-align: left;
-    background-color: aliceblue;
-    border: navy solid 1px;
 }
 
 #search-input {

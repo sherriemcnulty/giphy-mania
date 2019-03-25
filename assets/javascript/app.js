@@ -104,26 +104,39 @@ $(document).ready(function () {
                     // display images
                     for (var i = 0; i < data.length; i++) {
 
+                         // grab urls and ratings
                          var stillGif = data[i].images.original_still.url;
                          var animatedGif = data[i].images.original.url;
                          var alt = data[i].title;
+                         var rating = data[i].rating;
 
-                         var $img = $('<img>');
-                         $img.addClass('gif');
-                         $img.attr("src", stillGif);
-                         $img.attr("data-state", "still");
-                         $img.attr("data-animate", animatedGif);
-                         $img.attr("data-still", stillGif);
-                         $img.attr("alt", alt);
-                         var image = `<img class="gif" data-state="still" src="${stillGif}" data-animate="${animatedGif}" data-still="${stillGif}" alt="${alt}">\nRating: ${data[i].rating}`;
+                         // create elements and append to 
+                         var $img = `<img class="gif" data-state="still" src="${stillGif}" data-animate="${animatedGif}" data-still="${stillGif}" alt="${alt}"><br>`;
 
-                         //var $p = $('<p>');
-                         //$p.text(`Rating: ${data[i].rating}`);
-                         //var $div = $("<div>");
-                         //$div.append($img);
-                         //$div.append($p);
-                         $('#topic-view').prepend(image);
-                    }
+                         var $p = $("<p>");
+                         $p.text(`Rating: ${data[i].rating}`);
+                         $p.attr("id", `p${i}`);
+
+                         var $col = $("<div>");
+                         $col.addClass("col-md-3");
+                         $col.attr("id", `col${i}`);
+
+                         // append image and rating
+                         if (!(i % 5) && (i != 0)) {
+                              // append column to a new row
+                              var $row = $("<div>");
+                              $row.addClass("row");
+                              $row.attr("id", `row${i}`);
+                              $row.append($col);
+                              $col.append($img);
+                              $col.append($p);
+                              $("#topic-view").prepend($row);
+                         } else {
+                              $col.append($img);
+                              $col.append($p);
+                              $("#topic-view").prepend($col);
+                         } // if-else
+                    } // for
                }); // AJAX call
 
           } catch (e) {

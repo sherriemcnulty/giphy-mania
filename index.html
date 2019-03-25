@@ -12,7 +12,11 @@
      <!-- normalize before applying styles for consistency across platforms -->
      <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
 
-     <!-- Giphy-Mania styles -->
+     <!-- Bootstrap styles -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <!-- Giphy-Mania custom styles -->
      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -22,29 +26,37 @@
 
           <header><img class="std-width m-auto" src="assets/images/header.png" alt="jiffy giphy"></header>
 
-          <div id="content" class="std-width m-auto">
-               <p>
-                    Click any topic button to see pictures from that topic. Click the pictures to toggle
-                    between still and animated views. You can also add your own buttons by typing what you
-                    want to see in the search box. Then press "Submit." Enjoy!
-               </p>
+          <div class="row">
+               <div class="col-md-12">
+                    <p>
+                         Click any topic button to see pictures from that topic. Click the pictures to toggle
+                         between still and animated views. You can also add your own buttons by typing what you
+                         want to see in the search box. Then press "Submit." Enjoy!
+                    </p>
 
-               <form id="search-form">
-                    <label id="search-label" class="bold" for="search-input">Search:&nbsp;</label>
-                    <input id="search-input" type="text">
-                    <button id="submit-btn" class="bold">Submit</button>
-               </form>
+                    <form id="search-form">
+                         <label id="search-label" class="bold" for="search-input">Search:&nbsp;</label>
+                         <input id="search-input" type="text">
+                         <button id="submit-btn" class="bold">Submit</button>
+                    </form>
+               </div> <!-- col -->
+          </div> <!-- row -->
 
-               <!-- New buttons will get placed here-->
-               <div id="topic-buttons"></div>
+          <div class="row">
+               <div class="col-md-12" id="topic-buttons">
 
-               <!-- Gifs images will get placed here -->
-               <div id="topic-view"></div>
+                    <!-- This is where the buttons will go -->
 
-          </div> <!-- content -->
+               </div>
+          </div>
+
+          <div class="row" id="topic-view">
+
+               <!-- This is where gif images and ratings will go -->
+
+          </div>
+
      </div> <!-- container -->
-
-     <footer class="bold">Animation compliments of <a href="https://giphy.com/">Giphy.com</a></footer>
 
      <!-- jQuery library -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
