@@ -13,5 +13,5 @@ Development tools used:
     JavaScript
     jQuery
     Media Query
-    HTML5
+    Dynamic HTML5
     CSS3

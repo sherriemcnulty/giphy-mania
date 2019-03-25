@@ -128,7 +128,7 @@ $(document).ready(function () {
                          if (!(i % 4)) {
                               $row = $("<div>");
                               $row.addClass("row");
-                              $row.addClass("my-3")
+                              $row.addClass("my-3");
                          }
                          $row.append($col);
                          $col.append($img);
