@@ -4,7 +4,8 @@
 var topics = [
      'Daffy Duck',
      'Donald Duck',
-     'Betty Boop'
+     'Porky Pig',
+     'Road Runner'
 ];
 
 // create seed buttons
