@@ -22,31 +22,45 @@
 
 <body class="m-0 p-0 w-100 h-100">
      <div id="container" class="w-75 mt-0 mx-auto text-center">
-          <header><img id="header-img" class="w-75 m-auto" src="assets/images/header.png" alt="jiffy giphy">
+          <header><img id="header-img" class="w-75 mx-auto my-0" src="assets/images/header.png" alt="jiffy giphy">
           </header>
-          <div class="row">
+          <div class="row p-2" id="content">
                <div class="col-md-12">
                     <p class="w-75 h-auto mx-auto text-left">
                          Click any topic button to see pictures from that topic. Click the pictures to toggle
                          between still and animated views. You can also add your own buttons by typing what you
                          want to see in the search box. Then press "Submit." Enjoy!
                     </p>
-
+                    <p my-1>
+                         Animation compliments of <a href="https://giphy.com/">Giphy</a>.
+                    </p>
                     <form id="search-form" class="mx-auto p-2 font-weight-bold">
                          <label id="search-label" class="bold" for="search-input">Search:&nbsp;</label>
                          <input id="search-input" type="text">
                          <button id="submit-btn">Submit</button>
+                         <button id="clear-btn">Clear Images</button>
                     </form>
+
+                    <div class="row">
+                         <div class="col-md-12" id="topic-buttons">
+
+                              <!-- This is where the buttons will go -->
+
+                         </div>
+                    </div>
+
+                    <div class="row">
+                         <div class="col-md-12 text-center" id="topic-view">
+
+                              <!-- This is where the images will go -->
+
+                         </div>
+                    </div>
+
                </div> <!-- col -->
           </div> <!-- row -->
 
-          <div class="row">
-               <div class="col-md-12" id="topic-buttons">
 
-                    <!-- This is where the buttons will go -->
-
-               </div>
-          </div>
 
           <div class="content" id="topic-view">
 
