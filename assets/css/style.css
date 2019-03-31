@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: aliceblue;
+    background-color: wheat;
     background: url("../../assets/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,5 +33,5 @@ button {
 }
 
 #content {
-    background: rgba(245, 245, 247, 0.9);
+    background: rgba(245, 245, 247, 0.7);
 }
