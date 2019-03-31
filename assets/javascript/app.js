@@ -39,8 +39,7 @@ $(document).on('click', '.topic-btn', function () {
 
 $(document).on('click', '.clear-btn', function () {
 
-     // clear images from topic-view
-
+     // clear giphy images
      $('#topic-view').empty();
 });
 
