@@ -41,6 +41,7 @@ $(document).on('click', '.topic-btn', function () {
 $(document).on('click', '.clear-btn', function () {
 
      // clear giphy images
+     event.preventDefault();
      $('#topic-view').empty();
 });
 
@@ -103,8 +104,7 @@ function displayImages(title) {
 
                var data = response.data;
 
-               // we need to declare $row outside the loop
-               // to avoid creating a new one for each image
+               // we need to declare $row outside the loop to avoid creating a new one for each image
                var $row;
 
                for (var i = 0; i < data.length; i++) {
@@ -118,10 +118,6 @@ function displayImages(title) {
                     // create elements and append to 
                     var $img = `<img class="gif overflow-hidden" data-state="still" src="${stillGif}" data-animate="${animatedGif}" data-still="${stillGif}" alt="${alt}"><br>`;
 
-                    var $p = $("<p>");
-                    $p.text(`Rating: ${data[i].rating}`);
-                    $p.attr("id", `p${i}`);
-
                     var $col = $("<div>");
                     $col.addClass("col-md-2");
                     $col.attr("id", `col${i}`);
@@ -134,7 +130,6 @@ function displayImages(title) {
                     }
                     $row.append($col);
                     $col.append($img);
-                    $col.append($p);
                     $("#topic-view").prepend($row);
 
                } // for
