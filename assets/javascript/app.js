@@ -106,6 +106,7 @@ function displayImages(title) {
 
                // we need to declare $row outside the loop to avoid creating a new one for each image
                var $row;
+               $("#topic-view").empty();
 
                for (var i = 0; i < data.length; i++) {
 
