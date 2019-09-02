@@ -1,17 +1,23 @@
 # gif-tastic
-This is a demo that uses the API provided by giphy.com to access their gif images.
 
-The initial layout contains pre-defined buttons, a search bar and submit button.
+## Live Preview
+    - [Jiffy Giphy](https://sherriemcnulty.github.io/jiffy-giphy/)
 
-Pre-defined buttons display 10 related still gif images when clicked. Clicking on the images makes them toggle between still and animated gifs.
+## Description
+Jiffy-Giphy searches giphy.com for images via the giphy API. Create buttons by entering what they want to see in the search box and clicking the "Submit" button. Click buttons to see images. Click images to toggle animate them and stop animation.
 
-Enter topics into the search bar and click "Submit" to create your own buttons to access images related to your topics of choice.
+ ## Author
+    - Sherrie McNulty
+ 
+## Technologies Used
+    - jQuery
+    - AJAX
+    - Dynamic HTML
+    - Media Query
+    - CSS3
 
-Development tools used: 
-    API (giphy.com)
-    AJAX
-    JavaScript
-    jQuery
-    Media Query
-    Dynamic HTML5
-    CSS3
+  ### Deployment
+    - Github
+  
+## Copyright 
+© Sherrie McNulty 2019
