@@ -10,7 +10,7 @@ Jiffy-Giphy searches giphy.com for images via the giphy API.
 - Click images to toggle animate them and stop animation.
 
 ## Author
-Sherrie McNulty
+- Sherrie McNulty
  
 ## Technologies Used
 - jQuery
@@ -20,7 +20,7 @@ Sherrie McNulty
 - CSS3
 
 ## Deployment
-Github
+- Github
   
 ## Copyright 
 © Sherrie McNulty 2019
