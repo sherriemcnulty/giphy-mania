@@ -1,7 +1,7 @@
 # Jiffy-Giphy
 
 ## Live Preview
-[Jiffy-Giphy](https://https://sherriemcnulty.github.io/jiffy-giphy//)
+- [Jiffy-Giphy](https://https://sherriemcnulty.github.io/jiffy-giphy//)
 
 ## Description
 Jiffy-Giphy searches giphy.com for images via the giphy API.
