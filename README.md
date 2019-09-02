@@ -1,4 +1,4 @@
-# gif-tastic
+# Jiffy-Giphy
 
 ## Live Preview
 [Jiffy-Giphy](https://https://sherriemcnulty.github.io/jiffy-giphy//)
