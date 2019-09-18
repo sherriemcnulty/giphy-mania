@@ -1,37 +1,38 @@
 /* ----- element styles ----- */
 html,
 body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: wheat;
-    background: url("../../assets/images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: wheat;
+	background: url("../../assets/images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 button {
-    color: white;
-    background-color: #01569c;
-    border: 2px outset gray;
+	color: white;
+	background-color: #01569c;
+	border: 2px outset gray;
+}
+
+h2 {
+	font-size: large;
 }
 
 /* ----- class styles ----- */
 .gif {
-    width: 90%;
-    border: 2px outset gray;
+	width: 90%;
+	border: 2px outset gray;
 }
 
 /* ----- id styles ----- */
 header {
-    font-family: 'Arial',
-        'Helvetica Neue',
-        Helvetica,
-        sans-serif;
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 #instruction {
-    padding: 3px;
-    margin: auto;
-    background: rgba(245, 245, 247);
+	padding: 3px;
+	margin: auto;
+	background: rgba(245, 245, 247);
 }

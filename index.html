@@ -5,16 +5,21 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-     <title>Jiffy-Giphy</title>
      <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon" />
+     <title>Jiffy-Giphy</title>
 
-     <!-- normalize before applying styles for consistency across platforms -->
-     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-
-     <!-- Bootstrap styles -->
+     <!-- Bootstrap -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
 
      <!-- Giphy-Mania custom styles -->
      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -23,55 +28,57 @@
 <body class="m-0 p-0 w-100 h-100">
      <div id="container" class="w-75 mt-0 mx-auto text-center">
           <header>
-
                <img id="header-img" class="w-75 mx-auto my-0" src="assets/images/header.png" alt="jiffy giphy">
-
           </header>
 
-          <div id="instruction" class="h-auto mx-auto text-center">
-               <p class="text-left">
-                    See giphy images by clicking on the buttons of your choice or create your own button by using the search entry. You can then toggle between animated and still images by clicking on the pictures. Enjoy!
-               </p>
+          <div class="jumbotron bg-white h-auto mx-auto text-center">
+               <h2 class="text-left">
+                    See giphy images by clicking on the buttons of your choice or create your own button by using the
+                    search entry. You can then toggle between animated and still images by clicking on the pictures.
+                    Enjoy!
+               </h2>
+
                <p>
-                    Images are accessed from <a class="text-center text-info" href="https://giphy.com/">Giphy.com</a> via RESTful AJAX calls.
+                    Images are accessed via <a class="text-center text-info" href="https://giphy.com/">Giphy.com's</a>
+                    web service API.
                </p>
-          </div>
 
-          <div class="row p-2" id="content">
-               <div class="col-md-12">
+               <div class="row p-2" id="content">
+                    <div class="col-md-12">
 
-                    <form id="search-form" class="mx-auto p-2 font-weight-bold">
-                         <label id="search-label" class="bold" for="search-input">Search:&nbsp;</label>
-                         <input id="search-input" type="text">
-                         <button id="submit-btn">Submit</button>
-                         <button id="clear-btn">Clear Images</button>
-                    </form>
+                         <form id="search-form" class="mx-auto p-2 font-weight-bold">
+                              <label id="search-label" class="bold" for="search-input">Search:&nbsp;</label>
+                              <input id="search-input" type="text">
+                              <button id="submit-btn">Submit</button>
+                              <button id="clear-btn">Clear Images</button>
+                         </form>
 
-                    <div class="row">
-                         <div class="col-md-12" id="topic-buttons">
+                         <div class="row">
+                              <div class="col-md-12" id="topic-buttons">
 
-                              <!-- This is where the buttons will go -->
+                                   <!-- This is where the buttons will go -->
 
+                              </div>
                          </div>
-                    </div>
 
-                    <div class="row">
-                         <div class="col-md-12 text-center" id="topic-view">
+                         <div class="row">
+                              <div class="col-md-12 text-center" id="topic-view">
 
-                              <!-- This is where the images will go -->
+                                   <!-- This is where the images will go -->
 
+                              </div>
                          </div>
-                    </div>
 
-               </div> <!-- col -->
-          </div> <!-- row -->
-
+                    </div> <!-- col -->
+               </div> <!-- row -->
 
 
-          <div class="content" id="topic-view">
 
-               <!-- This is where gif images and ratings will go -->
+               <div class="content" id="topic-view">
 
+                    <!-- This is where gif images and ratings will go -->
+
+               </div>
           </div>
 
      </div> <!-- container -->
