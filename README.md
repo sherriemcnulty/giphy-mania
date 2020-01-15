@@ -13,4 +13,4 @@ Jiffy-Giphy searches giphy.com for images via the giphy API.
 - CSS3
 - Media Query
 - jQuery
-- REST
+- AJAX
