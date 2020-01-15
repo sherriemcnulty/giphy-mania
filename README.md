@@ -1,10 +1,6 @@
 # Jiffy-Giphy
 
-## Live Preview
-[Jiffy-Giphy](https://https://sherriemcnulty.github.io/jiffy-giphy//)
-
-## Author
-[Sherrie McNulty](https://github.com/sherriemcnulty)
+[Live Preview](https://https://sherriemcnulty.github.io/jiffy-giphy//)
 
 ## Description
 Jiffy-Giphy searches giphy.com for images via the giphy API.
@@ -12,15 +8,9 @@ Jiffy-Giphy searches giphy.com for images via the giphy API.
 - Click buttons to see images. 
 - Click images to toggle animate them and stop animation.
  
-## Technologies Used
-- jQuery
-- AJAX
-- Dynamic HTML
-- Media Query
+## Technologies
+- HTML5
 - CSS3
-
-## Deployment
-- Github
-  
-## Copyright 
-© Sherrie McNulty 2019
+- Media Query
+- jQuery
+- REST
